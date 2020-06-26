@@ -1,0 +1,71 @@
+@media (max-width: 1200px) {
+    .topNav{
+        display:none
+    }
+    .mobileNavContainer{
+        display:flex;
+    }
+
+    header .leftContainer, header .rightContainer{
+        width:50%
+    }
+
+    .portfolioItem{
+        width:45%;
+    }
+
+    .skillsIcons{
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .iconContainer{
+        width:20%;
+        .subContainer p{
+            @include fontSize(16);
+        }
+    }
+}
+
+@media (max-width: 830px) {
+    .topNav{
+        display:none
+    }
+    .mobileNavContainer{
+        display:flex;
+    }
+
+    header .leftContainer{
+        width:100%;
+        padding:0 10%;
+    }
+
+    header .rightContainer{
+        display:none;
+    }
+
+
+    .portfolioItem{
+        width:90%;
+
+    }
+    .iconContainer{
+        width:33%;
+    }
+
+    .thankYouMessage{
+        display:none;
+    }
+    
+    .contactSection{
+        form{
+            width:100%;
+        }
+    }
+
+    .aboutSection{
+        .textContainer{
+            transform:translateY(0px);
+
+        }
+    }
+}

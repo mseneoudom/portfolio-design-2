@@ -1,0 +1,30 @@
+.hamburgerMenu{
+    &:hover >*,
+    &:focus-within>*{
+        width:100%;
+    }
+}
+
+.buttonStyle:hover,
+.buttonStyle:focus-within,
+.portfolioItem a:hover,
+.portfolioItem a:focus-within{
+    background: black;
+    p{
+        color:white;
+    }
+}
+
+.socialContainer{
+    a i:hover{
+        color:black;
+    }
+}
+
+nav a,
+nav p{
+    &:hover,
+    &:focus-within{
+        color:rgb(147, 255, 242)
+    }
+}

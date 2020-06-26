@@ -1,0 +1,70 @@
+header{
+    display:flex;
+    height:100vh;
+    width:100%;
+
+    .leftContainer{
+        width:30%;
+        padding:5% 5%;
+
+        display:flex;
+        justify-content: center;
+        flex-wrap:wrap;
+        // background-image:linear-gradient(rgb(24, 24, 24), rgb(25, 24, 30));
+    }
+    
+    .rightContainer{
+        width:70%;
+        position: relative;
+        // padding:2% 5%;
+    }
+    .backgroundContainer{
+        height:100%;
+        width:100%;
+        top:0;
+        position:absolute;
+
+        background-image:url(../media/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+        // filter:grayscale(80%);
+        // filter:hue-rotate(50deg);
+        background-position: center;
+        background-size:cover;
+        z-index:-1;
+    }
+
+    .contentContainer{
+        padding:5%;
+    }
+}
+
+.logo{
+    width:150px;
+    height:150px;
+    // border-radius: 50%;
+    overflow: hidden;
+    // background:black;
+}
+
+.opener{
+    text-transform: uppercase;
+    @include fontSize(16);
+    color:$headerFont;
+}
+
+h1{
+    text-transform: uppercase;
+    @include fontSize(45);
+    color:darken($headerFont,10%);
+
+}
+
+.fontWhite{
+    color:white;
+}
+
+
+.headerMessage{
+    line-height:2;
+    color:black;
+}
+

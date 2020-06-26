@@ -1,0 +1,12 @@
+// Mixins @include
+@mixin fontSize($fontValue){
+	font-size: $fontValue * 1px;
+	font-size: ($fontValue/10) * 1rem;
+}
+
+$headerFont: rgb(216, 133, 133);
+// $secondColor:rgb(148, 202, 211);
+$thirdColor:rgb(148, 202, 211);
+$secondColor:rgb(251, 174, 102);
+// $thirdColor:rgb(251, 174, 102);
+$fourthColor:rgb(49, 49, 49);

@@ -1,0 +1,96 @@
+.portfolioSection{
+    position:relative;
+    background-image:linear-gradient($secondColor, darken($secondColor,5%));
+    // background-image:linear-gradient(rgb(24, 24, 24), rgb(25, 24, 30));
+
+
+    h2{
+        width:100%;
+        text-align: center;
+        color:white;
+        text-transform: uppercase;
+        margin-bottom:10px;
+
+    }
+    .sectionContainer{
+        display:flex;
+        flex-wrap:wrap;
+        padding:2% 0;
+        display:flex;
+        justify-content: space-around;
+    }
+}
+
+.portfolioItem{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    width:32%;
+    padding:2% 2%;
+    margin:8px 0;
+    position:relative;
+    background:white;
+    border-radius:5px;   
+    
+    .textContainer{
+        display:flex;
+        flex-wrap:wrap;
+        >*{
+            width:100%;
+            margin:1% 0;
+        }
+        h3{
+            font-weight:400;       
+            color:darken($secondColor,15%);
+        }
+        p{
+            font-weight:300;
+            @include fontSize(18);
+            letter-spacing: 1px;
+            color:darken($secondColor,15%);
+
+        }
+        .description{
+            @include fontSize(16);
+            line-height:25px;
+            letter-spacing: 0;
+        }
+        a{
+            width:auto;
+            margin-right:10px;
+            @include fontSize(18);
+            border:2px solid white;
+            border-radius:5px;
+            padding:2%;
+            transition:500ms;
+            background-image:linear-gradient($secondColor, darken($secondColor,2%));
+            color:white;
+
+        }
+    }
+    .webPreview{
+        position:relative;
+        border:1px solid $secondColor;
+        border-radius:5px;
+        overflow: hidden;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.portfolioSection .vertLine{
+    transform: rotate(180deg);
+}
+
+.gifImage{
+    position:absolute;
+    right:0;
+    bottom:0;
+    z-index:-1;
+}
+
+.imageContainer:hover>.gifImage,
+.imageContainer:hover>.mobilePreview .gifImage{
+    z-index: 0;
+}

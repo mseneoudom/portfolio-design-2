@@ -1,0 +1,131 @@
+.contactSection{
+    padding:2% 0;
+    // background-image:linear-gradient($thirdColor, darken($thirdColor,2%));
+    background-image:linear-gradient(rgb(24, 24, 24), rgb(25, 24, 30));
+
+
+
+    .bleed{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    h2{
+        width:100%;
+        text-align: center;
+        font-weight:700;
+        color:white;
+        text-transform: uppercase;
+    }
+    .sectionContainer{
+        display:flex;
+        flex-wrap:wrap;
+        padding:0 5%;
+        width:100%;
+        .textContainer{
+            width:100%;
+        }
+    }
+    
+    form{
+        width:50%;
+        display:flex;
+        flex-direction: column;
+    }
+    p{
+        color:white;
+        font-weight:300;
+        @include fontSize(14);
+    }
+    button p{
+        color:black;
+    }
+
+    h3{
+        color:white;
+        text-align: left;
+        font-weight:400;
+    }
+    .textContainer{
+        padding:2% 0;
+    }
+}
+
+input, textarea{
+
+    padding:2%;
+    margin-bottom:4%;
+    @include fontSize(16);
+
+    &::placeholder{
+        @include fontSize(12);
+    }
+}
+
+.contactSection button{
+
+    font-weight:400;
+    @include fontSize(18);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    padding:15px 10px;
+    z-index:1;
+
+    cursor:pointer;
+    width:250px;
+}
+
+.socialContainer {
+    width:40%;
+    position:relative;
+    
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items: center;
+
+    margin:0 auto;
+
+    padding:10px 0;
+    >*{
+        margin:10px 0;
+    }
+    p{
+        @include fontSize(18);
+        width:100%;
+        text-align: center;
+    }
+    
+    a{
+        @include fontSize(40);
+        i{
+            color:$fourthColor;
+            transition:500ms;
+        }
+    }
+}
+
+.socialContainer{
+    .buttonStyle{
+        background:$fourthColor;
+    }
+}
+
+.sectionBook{
+    padding:25px 0;
+}
+
+.thankYouMessage{
+    width:50%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding:0 2%;
+    p{
+        width:100%;
+        line-height:2;
+    }
+    a{
+        color:white;
+    }
+}
